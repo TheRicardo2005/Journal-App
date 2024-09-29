@@ -5,12 +5,16 @@ import { useDispatch } from "react-redux"
 import { setActiveNote } from "../../store/journal"
 
 
-export const SiderBarItem = ({ title, body, id, date, imageUrls = [] }) => {
+export const SiderBarItem = ({ title = '', body = '', id, date, imageUrls = [] }) => {
 
     const dispatch = useDispatch();
     const newTitle = useMemo(() => {
         return title.length > 17 ? title.substring(0,17) + '...' : title;
     },[title])
+
+    const newBody = useMemo(() => {
+        return title.length > 20 ? title.substring(0,20) + '...' : body; 
+    },[body])
 
     const onActiveNote = () => {
         dispatch(setActiveNote({ id, title, body, date, imageUrls }));
@@ -25,7 +29,7 @@ export const SiderBarItem = ({ title, body, id, date, imageUrls = [] }) => {
 
                 <Grid container>
                     <ListItemText primary={newTitle} />
-                    <ListItemText secondary={body} />
+                    <ListItemText secondary={newBody} />
                 </Grid>
             </ListItemButton>
         </ListItem>
