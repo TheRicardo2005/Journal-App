@@ -1,6 +1,6 @@
 import { Box, Divider, Drawer, List, Toolbar, Typography } from "@mui/material"
 import { useSelector } from "react-redux"
-import { SiderBarItem } from "./siderBarItem";
+import { SiderBarItem } from "./SiderBarItem";
 
 
 export const SideBar = ({ drawerWidth = 240 }) => {
