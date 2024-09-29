@@ -13,7 +13,7 @@ export const SiderBarItem = ({ title = '', body = '', id, date, imageUrls = [] }
     },[title])
 
     const newBody = useMemo(() => {
-        return title.length > 20 ? title.substring(0,20) + '...' : body; 
+        return body.length > 20 ? body.substring(0,20) + '...' : body; 
     },[body])
 
     const onActiveNote = () => {
