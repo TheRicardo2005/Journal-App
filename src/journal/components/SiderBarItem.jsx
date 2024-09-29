@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux"
 import { setActiveNote } from "../../store/journal"
 
 
-export const siderBarItem = ({ title, body, id, date, imageUrls = [] }) => {
+export const SiderBarItem = ({ title, body, id, date, imageUrls = [] }) => {
 
     const dispatch = useDispatch();
     const newTitle = useMemo(() => {

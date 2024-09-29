@@ -1,6 +1,6 @@
 import { Box, Divider, Drawer, List, Toolbar, Typography } from "@mui/material"
 import { useSelector } from "react-redux"
-import { siderBarItem } from "./siderBarItem";
+import { SiderBarItem } from "./SiderBarItem";
 
 
 export const SideBar = ({ drawerWidth = 240 }) => {
@@ -33,7 +33,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
                 <List>
                     {
                         notes.map(note => (
-                            <siderBarItem key={note.id} {...note}/>
+                            <SiderBarItem key={note.id} {...note}/>
                         ))
                     }
                 </List>
