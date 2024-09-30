@@ -1,6 +1,7 @@
 # JournalApp
 
-![561shots_so](https://github.com/user-attachments/assets/f0d5580c-2305-41e1-aff0-aa0687c7d71c)
+
+![561shots_so](https://github.com/user-attachments/assets/1051f381-3e60-4ac6-998b-face1a2f557f)
 
 
 ## Descripción:
